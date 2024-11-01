@@ -1,8 +1,6 @@
-// Declaração das constantes para os tipos de combustível
 const GASOLINA: string = "GASOLINA";
 const ETANOL: string = "ETANOL";
 
-// Classe Combustivel
 class Combustivel {
   tipo: string;
   preco: number;
@@ -13,7 +11,6 @@ class Combustivel {
   }
 }
 
-// Classe Posto
 class Posto {
   nome: string;
   gasolina: Combustivel;
@@ -25,7 +22,6 @@ class Posto {
     this.etanol = new Combustivel(ETANOL, precoEtanol);
   }
 
-  // Método para sugerir qual combustível é mais vantajoso
   sugereCombustivel(): string {
     const proporcao = this.etanol.preco / this.gasolina.preco;
     const vantagem = proporcao < 0.7 ? "ETANOL" : "GASOLINA";
@@ -34,14 +30,11 @@ class Posto {
   }
 }
 
-// Função para exibir os resultados na página
 function exibirResultados(): void {
-    // Instanciando três postos com valores para gasolina e etanol
     const posto1 = new Posto("Posto Shell", 5.50, 3.70);
     const posto2 = new Posto("Posto Box", 5.30, 3.90);
     const posto3 = new Posto("Posto Ipiranga", 5.80, 4.00);
     
-    // Selecionando o elemento HTML para mostrar os resultados
     const resultadosDiv = document.getElementById("resultados");
     
     if (resultadosDiv) {
@@ -53,5 +46,4 @@ function exibirResultados(): void {
     }
 }
 
-// Garante que o código execute após o carregamento da página
 document.addEventListener("DOMContentLoaded", exibirResultados);
