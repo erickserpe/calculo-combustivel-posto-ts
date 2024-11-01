@@ -1,0 +1,16 @@
+{
+  "name": "calculo-combustivel-posto-ts",
+  "version": "1.0.0",
+  "description": "Este projeto é uma aplicação simples em TypeScript que calcula se é mais vantajoso abastecer um carro com Gasolina ou Etanol em determinados postos de combustíveis. Utilizando conceitos de Orientação a Objetos, o programa determina qual combustível oferece melhor custo-benefício com base nos preços fornecidos.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sucrase": "^3.35.0",
+    "typescript": "^5.6.3"
+  }
+}
