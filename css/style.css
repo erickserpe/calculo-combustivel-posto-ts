@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e8f0f2;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 30px;
+    max-width: 600px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    border: 1px solid #dde5e9;
+  }
+  
+  h1 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+  }
+  
+  .resultados {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .resultados .posto {
+    font-size: 18px;
+    color: #4a4a4a;
+    padding: 15px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #e0f7fa, #ffffff);
+    border: 1px solid #cce7e8;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .resultados .posto:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .resultados .posto:nth-child(odd) {
+    background: linear-gradient(135deg, #f1f8e9, #ffffff);
+  }
+  
+  .resultados .posto strong {
+    font-weight: 600;
+    color: #00796b;
+  }
+  
+  .resultados .posto .proporcao {
+    font-style: italic;
+    color: #777;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
